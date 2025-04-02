@@ -11,7 +11,7 @@ const AppRouter = () => {
 					element={<App />}
 				>
 					<Route
-						path='/browser-extensions-manager-ui-main/:status'
+						path='/browser-extensions-manager-ui-main/:status/'
 						element={<ContainerCards />}
 					/>
 				</Route>

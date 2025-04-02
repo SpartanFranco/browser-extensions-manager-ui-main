@@ -10,7 +10,7 @@ export type ArrStatus = 'all' | 'active' | 'inactive';
 export type URLStatus = {
 	[k in ArrStatus]: k extends 'all'
 		? '/browser-extensions-manager-ui-main/'
-		: `/browser-extensions-manager-ui-main/${k}`;
+		: `/browser-extensions-manager-ui-main/${k}/`;
 };
 export type URLStatusValues = URLStatus[ArrStatus];
 export interface CardActive {

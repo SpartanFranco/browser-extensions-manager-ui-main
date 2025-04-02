@@ -11,10 +11,10 @@ export const ContainerCards = () => {
 	const typedPathname = pathname as URLStatusValues;
 
 	useEffect(() => {
-		if (typedPathname == '/browser-extensions-manager-ui-main/active')
+		if (typedPathname == '/browser-extensions-manager-ui-main/active/')
 			setDataFiltered(data.filter((i) => i.isActive));
 
-		if (typedPathname == '/browser-extensions-manager-ui-main/inactive')
+		if (typedPathname == '/browser-extensions-manager-ui-main/inactive/')
 			setDataFiltered(data.filter((i) => !i.isActive));
 	}, [data, typedPathname]);
 	return (

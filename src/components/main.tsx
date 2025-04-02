@@ -23,7 +23,7 @@ const Main = () => {
 							to={
 								el === 'all'
 									? '/browser-extensions-manager-ui-main/'
-									: `/browser-extensions-manager-ui-main/${el}`
+									: `/browser-extensions-manager-ui-main/${el}/`
 							}
 							end={el === 'all'}
 							key={el}
