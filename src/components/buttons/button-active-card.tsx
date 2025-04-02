@@ -17,6 +17,7 @@ export default function ButtonActiveCard({ isActive, name }: Props) {
 
 	return (
 		<button
+			aria-label='Toggle activate or inactivate item'
 			className={`flex h-[22px] w-[40px] cursor-pointer items-center rounded-full p-[3px] ${
 				!isOn
 					? 'justify-start bg-(--Neutral-300) dark:bg-(--Neutral-600)'

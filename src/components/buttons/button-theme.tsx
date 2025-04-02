@@ -17,6 +17,7 @@ export const ButtonTheme = () => {
 	return (
 		<button
 			onClick={toggleTheme}
+			aria-label='Toggle dark mode'
 			className='cursor-pointer rounded-md bg-(--Neutral-100) px-3 py-2 hover:bg-(--Neutral-300) dark:bg-(--Neutral-700) dark:hover:bg-(--Neutral-600)'
 		>
 			<motion.img
