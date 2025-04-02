@@ -41,7 +41,7 @@ const Main = () => {
 					))}
 				</div>
 			</div>
-			<div className='mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+			<div className='mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
 				{typedPathName == '/browser-extensions-manager-ui-main/' ? (
 					data.map((item) => (
 						<Card

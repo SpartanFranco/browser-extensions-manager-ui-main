@@ -17,12 +17,12 @@ export const ButtonTheme = () => {
 	return (
 		<button
 			onClick={toggleTheme}
-			className='cursor-pointer rounded-md bg-(--Neutral-100) p-2 hover:bg-(--Neutral-300) dark:bg-(--Neutral-700) dark:hover:bg-(--Neutral-600)'
+			className='cursor-pointer rounded-md bg-(--Neutral-100) px-3 py-2 hover:bg-(--Neutral-300) dark:bg-(--Neutral-700) dark:hover:bg-(--Neutral-600)'
 		>
 			<motion.img
 				src={theme === Themes.DARK ? sun : moon}
 				alt={theme === Themes.DARK ? 'sun' : 'moon'}
-				key={theme === Themes.DARK ? 'sun' : 'moon'} // Key helps React identify when to animate
+				key={theme === Themes.DARK ? 'sun' : 'moon'}
 				initial={{ opacity: 0, rotate: -180 }}
 				animate={{ opacity: 1, rotate: 0 }}
 				exit={{ opacity: 0 }}
@@ -31,6 +31,7 @@ export const ButtonTheme = () => {
 					type: 'spring',
 					stiffness: 200,
 				}}
+				className='size-6'
 			/>
 		</button>
 	);
