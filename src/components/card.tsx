@@ -25,7 +25,7 @@ export const Card = ({ description, isActive, logo, name }: Data) => {
 			>
 				<div className='flex gap-6'>
 					<img
-						src={`/${urlLogo}`}
+						src={`/browser-extensions-manager-ui-main/${urlLogo}`}
 						alt={name + '-logo'}
 						className='size-[50px]'
 					/>

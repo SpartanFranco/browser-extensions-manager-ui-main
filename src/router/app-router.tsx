@@ -7,7 +7,7 @@ const AppRouter = () => {
 		<Router>
 			<Routes>
 				<Route
-					path='/browser-extensions-manager-ui-main'
+					path='/browser-extensions-manager-ui-main/'
 					element={<App />}
 				>
 					<Route
