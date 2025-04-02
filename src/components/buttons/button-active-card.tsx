@@ -25,7 +25,7 @@ export default function ButtonActiveCard({ isActive, name }: Props) {
 			}`}
 			onClick={toggleSwitch}
 		>
-			<motion.div
+			<motion.span
 				className='size-[17px] rounded-full bg-white'
 				layout
 				transition={{
