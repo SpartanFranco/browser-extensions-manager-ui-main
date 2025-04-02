@@ -19,7 +19,11 @@ const Main = () => {
 				<div className='flex justify-center gap-4 md:justify-end'>
 					{statusData.map((el) => (
 						<NavLink
-							to={el === 'all' ? '/' : `/${el}`}
+							to={
+								el === 'all'
+									? '/browser-extensions-manager-ui-main'
+									: `/browser-extensions-manager-ui-main/${el}`
+							}
 							key={el}
 							className={({ isActive }) =>
 								`size-fit cursor-pointer rounded-[1.4rem] px-5 py-1 text-xl capitalize ${
